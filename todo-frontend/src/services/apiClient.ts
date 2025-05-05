@@ -1,10 +1,12 @@
 
 import axios from 'axios';
 import { toast } from 'sonner';
+const API_URL = import.meta.env.VITE_API_URL
+
 
 // Create axios instance with base URL and credentials
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000/api', // Your backend URL
+  baseURL: `${API_URL}/api`, // Your backend URL
   withCredentials: true,
 });
 
@@ -59,7 +61,7 @@ apiClient.interceptors.response.use(
       try {
         // Call the refresh token endpoint
         const { data } = await axios.post('/api/auth/refresh', {}, {
-          baseURL: 'http://localhost:3000',
+          baseURL: `${API_URL}`,
           withCredentials: true // Important for sending the refresh token cookie
         });
         

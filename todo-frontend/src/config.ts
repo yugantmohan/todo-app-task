@@ -1,8 +1,9 @@
+const API_URL = import.meta.env.VITE_API_URL
 
 // Application configuration
 const config = {
   // API URLs
-  apiUrl: 'http://localhost:3000/api', // Change this when deploying
+  apiUrl: `${API_URL}/api`, // Change this when deploying
   
   // Auth settings
   authTokenKey: 'accessToken',
