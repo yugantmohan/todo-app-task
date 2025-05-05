@@ -2,6 +2,10 @@
 
 A full-stack Todo management application with user authentication, task tracking, drag-and-drop reordering, filtering, search, pagination, and activity logging.
 
+## To Check Deployment:
+
+- Frontend: https://todo-app-task-production.up.railway.app/
+
 ## Features
 
 - User Signup & Login (JWT-based)
@@ -47,7 +51,7 @@ PORT=3000
 
 Frontend (todo-frontend/.env):
 
-VITE_API_BASE_URL=http://localhost:3000/api
+VITE_API_URL=http://localhost:3000/api
 
 ### 3. Run locally
 
