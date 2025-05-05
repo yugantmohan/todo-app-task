@@ -4,7 +4,7 @@ A full-stack Todo management application with user authentication, task tracking
 
 ## To Check Deployment:
 
-- Frontend: https://todo-app-task-production.up.railway.app/
+- App(frontend/backend): https://todo-app-task-production.up.railway.app/
 
 ## Features
 
